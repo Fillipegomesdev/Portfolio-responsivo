@@ -1,56 +1,53 @@
 <!DOCTYPE html>
-   <html lang="pt-br">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
 
-      <!--=============== FAVICON ===============-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Portfolio Responsivo</title>
+</head>
 
-      <title>Portfolio Responsivo</title>
-   </head>
-
-   <body>
-      <!--==================== HEADER(CABEÇALHO) ====================-->
-      <header class="header" id="header">
+<body>
+    <!--==================== HEADER(CABEÇALHO) ====================-->
+    <header class="header" id="header">
         <div class="blob-animate"></div>
 
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Fillipe</a>
-
+        <nav class="nav container" aria-label="Navegação principal">
+            <a href="#home" class="nav__logo" aria-label="Voltar ao início">Fillipe</a>
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="Sobre mim" class="nav__link">Sobre mim</a>
+                        <a href="#about" class="nav__link">Sobre mim</a>
                     </li>
 
                     <li>
-                        <a href="Projetos" class="nav__link">Projetos</a>
+                        <a href="#projects" class="nav__link">Projetos</a>
                     </li>
 
                     <li>
-                        <a href="Contatos" class="nav__link">Contato</a>
+                        <a href="#contact" class="nav__link">Contato</a>
                     </li>
                 </ul>
             </div>
         </nav>
+    </header>
 
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!-- CUSTOM CURSOR -->
-         
-         <!--==================== HOME ====================-->
-         <section class="home section">
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!-- CUSTOM CURSOR -->
+        <div class="cursor"></div>
+        <!--==================== HOME ====================-->
+        <section class="home section">
             <div class="home__shadow"></div>
 
             <div class="home__container container grid">
@@ -63,23 +60,25 @@
                     <div class="blob-animate"></div>
                     <img src="./assets/img/home-fillipe-removebg-preview.png" alt="image" class="home__perfil">
                 </div>
-
-                <div class="home__info">
-                    <h3 class="home__split">Criativo</h3>
-                    <!--Insert profession, short text-->
-                    <h2 class="home__profession-1">Desenvolvedor</h2>
-                    <h2 class="home__profession-2">& Designer</h2>
-                </div>
                 
+                <!-- Letras Flutuantes -->
+                <div class="home__info">
+                    <h3 class="home__split">Aprendendo</h3>
+                    <!--Insert profession, short text-->
+                    <h2 class="home__profession-1">Html & css</h2>
+                    <h2 class="home__profession-2">javascript</h2>
+                </div>
+
 
                 <!--ICONES SOCIAL MEDIA-->
                 <div class="home__social">
                     <a href="" target="_blank" class="home__social-link">
-                       <i class="ri-linkedin-box-line"></i>
+                        <i class="ri-linkedin-box-line"></i>
                     </a>
-                    
-                    <a href="" target="_blank" class="home__social-link">
-                       <i class="ri-github-line"></i>
+
+                    <a href="https://github.com/Fillipegomesdev?tab=repositories" target="_blank"
+                        class="home__social-link">
+                        <i class="ri-github-line"></i>
                     </a>
 
                     <a href="" target="_blank" class="home__social-link">
@@ -91,29 +90,30 @@
                     </a>
                 </div>
                 <a href="./assets/pdf/CurriculoFillipe2025.pdf" download target="_blank" class="home__cv">
-                   Curriculo <i class="ri-file-list-2-line"></i>
+                    Curriculo <i class="ri-file-list-2-line"></i>
                 </a>
             </div>
-         </section>
+        </section>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
             <div class="about__shadow"></div>
 
             <div class="about__container container grid">
                 <div class="about__data">
                     <h2 class="section__title">
-                        <span>Criatividade</span>
-                        <br> É Minha Paixao
+                        <span>Fundação</span>
+                        <br> Em Construção
                     </h2>
 
                     <p class="about__description">
-                        Sou estudante<b> de Engenharia de Software</b> e apaixonado por tecnologia desde cedo.
-                        Possuo conhecimentos em HTML, CSS, JavaScript, Git e GitHub e, atualmente, estou desenvolvendo projetos práticos para aprimorar minhas habilidades em desenvolvimento front-end.
+                        Estudante de Engenharia de Software em transição de carreira. Atualmente, dedico meus dias ao estudo de Front-end (HTML,
+                        CSS, JS) e Git/GitHub, conciliando com o trabalho no período noturno. Tenho foco em aprender a lógica de construção de
+                        projetos e busco minha primeira oportunidade de Estágio para evoluir tecnicamente e contribuir com o time
                     </p>
 
                     <a href="./assets/pdf/CurriculoFillipe2025.pdf" download target="_blank" class="button">
-                        Curriculo <i class="ri-file-list-2-line"></i> 
+                        Curriculo <i class="ri-file-list-2-line"></i>
                     </a>
                 </div>
 
@@ -124,50 +124,575 @@
                 </div>
 
             </div>
-         </section>
+        </section>
 
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            
-         </section>
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title"> <!--COLINHA PARA CRIAR CLASSE MAIS RAPIDA "section.__title"-->
+                Meus primeiros<br>
+                <span>passos no código</span>
+            </h2>
 
-         <!--==================== WORK ====================-->
-         <section class="work section">
+            <div class="projects__container container grid">
+                <!--COLINHA PARA CRIAR CLASSE MAIS RAPIDA " div.projects__container.container.grid"-->
+                <div class="projects__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="projects__card swiper-slide">
+                            <div class="blob"></div>
 
-         </section>
+                            <div class="projects__number">
+                                <h1>1</h1>
+                                <h3>Web</h3>
+                            </div>
 
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
+                            <div class="projects__data">
+                                <h1 class="projects__title">Diario Dev <br> website</h1>
+                                <p class="projects__subtitle">Tecnologias usadas</p>
+                                <p class="projects__description">HTML, CSS, Javascript,Git e Github</p>
+                            </div>
 
-         </section>
+                            <div class="projects__image">
+                                <img src="assets/img/projects-1.png" alt="image" class="projects__img">
+                                <a href="#" target="_blank" class="projects__button">
+                                    <i class="ri-arrow-right-up-long-line"></i>
+                                </a>
+                            </div>
+                        </article>
 
-         <!--==================== TESTIMONIALS ====================-->
-         <section class="testimonials section">
+                        <article class="projects__card swiper-slide">
+                            <div class="blob"></div>
 
-         </section>
+                            <div class="projects__number">
+                                <h1>2</h1>
+                                <h3>Web</h3>
+                            </div>
 
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            
-         </section>
-      </main>
+                            <div class="projects__data">
+                                <h1 class="projects__title">Portfólio <br> website</h1>
+                                <p class="projects__subtitle">Tecnologias usadas</p>
+                                <p class="projects__description">HTML, CSS, Javascript,Git e Github</p>
+                            </div>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer grid">
-         
-      </footer>
-      
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="./assets/js/scrollreveal.min.js"></script>
+                            <div class="projects__image">
+                                <img src="assets/img/projects-1.png" alt="image" class="projects__img">
+                                <a href="#" target="_blank" class="projects__button">
+                                    <i class="ri-arrow-right-up-long-line"></i>
+                                </a>
+                            </div>
+                        </article>
 
-      <!--=============== ANIME JS ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
 
-      <!--=============== SWIPER JS ===============-->
-      <script src="./assets/js/swiper-bundle.min.js"></script>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="./assets/js/main.js"></script>
-   </body>
+                        <article class="projects__card swiper-slide">
+                            <div class="blob"></div>
+
+                            <div class="projects__number">
+                                <h1>3</h1>
+                                <h3>Web</h3>
+                            </div>
+
+                            <div class="projects__data">
+                                <h1 class="projects__title">Mecanica<br> website</h1>
+                                <p class="projects__subtitle">Tecnologias usadas</p>
+                                <p class="projects__description">HTML, CSS, Javascript,Git e Github</p>
+                            </div>
+
+                            <div class="projects__image">
+                                <img src="assets/img/projects-1.png" alt="image" class="projects__img">
+                                <a href="#" target="_blank" class="projects__button">
+                                    <i class="ri-arrow-right-up-long-line"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== WORK ====================-->
+        <section class="work section">
+            <h2 class="section__title">
+                <span>Historico</span>
+                <br>Profissional
+            </h2>
+
+            <div class="work__container container grid">
+                <div class="work__tabs">
+                    <!--BUTTON EXPERIENCE -->
+                    <button class="work__button work-active" data-target="#experience">
+                        Experiência <i class="ri-briefcase-3-line"></i>
+                    </button>
+
+                    <!--BUTTON EDUCATION-->
+                    <button class="work__button" data-target="#education">
+                        Formação <i class="ri-graduation-cap-line"></i>
+                    </button>
+                </div>
+
+                <div class="work__area">
+                    <div class="work__line"></div>
+
+                    <!--CONTENT EXPERIENCE-->
+                    <div class="work__content work-active" data-content id="experience">
+                        <div class="work__card">
+                            <div class="work__data">
+                                <div>
+                                    <h1 class="work__title">Promotor</h1>
+                                    <h3 class="work__subtitle">Ever trade marketing</h3>
+                                </div>
+
+                                <h2 class="work__year">2025</h2>
+                            </div>
+
+                            <p class="work__description">
+                                Promotor responsável pela organização de produtos, controle de estoque,
+                                reposição de mercadorias e atendimento ao público.
+                            </p>
+                        </div>
+
+                        <div class="work__card">
+                            <div class="work__data">
+                                <div>
+                                    <h1 class="work__title">Repositor</h1>
+                                    <h3 class="work__subtitle">Atacadão</h3>
+                                </div>
+
+                                <h2 class="work__year">2024</h2>
+                            </div>
+
+                            <p class="work__description">
+                                Promotor responsável pela organização de produtos, controle de estoque,
+                                reposição de mercadorias e atendimento ao público.
+                            </p>
+                        </div>
+
+                        <div class="work__card">
+                            <div class="work__data">
+                                <div>
+                                    <h1 class="work__title">Repositor</h1>
+                                    <h3 class="work__subtitle">Assai</h3>
+                                </div>
+
+                                <h2 class="work__year">2023</h2>
+                            </div>
+
+                            <p class="work__description">
+                                Promotor responsável pela organização de produtos, controle de estoque,
+                                reposição de mercadorias e atendimento ao público.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--CONTENT EDUCATION-->
+                    <div class="work__content work-active" data-content id="education">
+                        <!--FIRST CONTENT OF CONTENT EDUCUCATION-->
+                        <div class="work__card"> <!--WORK CARD 1-->
+                            <div class="work__data">
+                                <div>
+                                    <h1 class="work__title">Dev Web</h1>
+                                    <h3 class="work__subtitle">Estácio</h3>
+                                </div>
+
+                                <h2 class="work__year">2025</h2>
+                            </div>
+
+                            <p class="work__description">
+                                Desenvolvimento de aplicações e páginas web com HTML5, CSS, JavaScript
+                                e PHP, unindo estrutura, estilo, lógica e integração.
+                            </p>
+                        </div>
+
+                        <div class="work__card"> <!--WORK CARD 2-->
+                            <div class="work__data">
+                                <div>
+                                    <h1 class="work__title">Paradigmas</h1>
+                                    <h3 class="work__subtitle">Estácio</h3>
+                                </div>
+
+                                <h2 class="work__year">2025</h2>
+                            </div>
+
+                            <p class="work__description">
+                                Estudo dos principais paradigmas de programação, incluindo imperativo,
+                                orientado a objetos e funcional, utilizando Python
+                            </p>
+                        </div>
+
+                        <div class="work__card"> <!--WORK CARD 3-->
+                            <div class="work__data">
+                                <div>
+                                    <h1 class="work__title">Arquitetura</h1>
+                                    <h3 class="work__subtitle">Estácio</h3>
+                                </div>
+
+                                <h2 class="work__year">2025</h2>
+                            </div>
+
+                            <p class="work__description">
+                                Estudo da organização interna do computador, CPU, memória e estrutura
+                                de hardware que permite a execução de instruções.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section"><!---->
+            <h2 class="section__title">Oque eu <span>Ofereço</span></h2>
+
+            <div class="services__container container grid">
+                <!--SERVICES DEVELOPER-->
+                <div class="services__card services-open">
+                    <div class="blob"></div>
+
+
+                    <div class="services__data">
+                        <h2 class="services__title">Desenvolvedor</h2>
+                        <p class="services__description">
+                            Desenvolvo sites com HTML, CSS e JavaScript, priorizando responsividade
+                            e boas práticas, Aprendendo PHP e evoluindo rumo a tecnologias modernas
+                            como React e TypeScript
+                        </p>
+                    </div>
+
+                    <div class="services__info">
+                        <h3 class="services__subtitle">Skills & Ferramentas</h3>
+
+                        <ul class="services__skills">
+                            <li class="services__skill">HTML5</li>
+                            <li class="services__skill">CSS3</li>
+                            <li class="services__skill">JavaScript</li>
+                            <li class="services__skill">PHP</li>
+                            <li class="services__skill">Git</li>
+                            <li class="services__skill">Github</li>
+                        </ul>
+                    </div>
+
+                    <button class="services__button">
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                </div>
+                <!--SERVICES DESIGN-->
+                <div class="services__card services-close">
+                    <div class="blob blob-2"></div>
+
+
+                    <div class="services__data">
+                        <h2 class="services__title">Design</h2>
+                        <p class="services__description">
+                            Desenvolvimento responsivo em HTML, CSS e JavaScript,
+                            aplicando práticas modernas aprendidas em projetos guiados
+                            e usando ícones e tipografias para elevar o design.
+                        </p>
+                    </div>
+
+                    <div class="services__info">
+                        <h3 class="services__subtitle">Skills & Ferramentas</h3>
+
+                        <ul class="services__skills">
+                            <li class="services__skill">Icon libraries</li>
+                            <li class="services__skill">Google Fonts</li>
+                            <li class="services__skill">Design responsivo</li>
+                            <li class="services__skill">Animações CSS</li>
+                            <li class="services__skill">Canva</li>
+                            <li class="services__skill">Acessibilidade web</li>
+                        </ul>
+                    </div>
+
+                    <button class="services__button">
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIALS ====================-->
+        <section class="testimonials section">
+            <h2 class="section__title">
+                <span>Oque eles dizem</span>
+                <br>Sobre mim
+            </h2>
+
+            <div class="testimonials__container container grid">
+                <!-- TESTIMONIALS CARDS 1 -->
+                <div class="testimonials__content">
+                    <article class="testimonials__card">
+                        <div class="blob"></div>
+
+                        <div class="testimonials__data">
+                            <img src="assets/img/ChatGPT Image 22 de nov. de 2025, 14_53_28.png" alt="image"
+                                class="testimonials__img testimonials__img--spar">
+                            <h2 class="testimonials__name">Ever trade marketing</h2>
+
+                            <div class="testimonials__rating">
+                                <div class="testimonials__stars">
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+
+                                <h3 class="testimonials__number">5.0</h3>
+                            </div>
+
+                            <p>
+                                Durante o tempo que trabalhou conosco, o Fillipe sempre se destacou pela disciplina
+                                e pela vontade de resolver qualquer problema que aparecesse.
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="testimonials__card">
+                        <div class="blob"></div>
+
+                        <div class="testimonials__data">
+                            <img src="assets/img/atacadao-logo.png" alt="image" class="testimonials__img">
+                            <h2 class="testimonials__name">Atacadao</h2>
+
+                            <div class="testimonials__rating">
+                                <div class="testimonials__stars">
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+
+                                <h3 class="testimonials__number">5.0</h3>
+                            </div>
+
+                            <p>
+                                Durante o tempo que trabalhou conosco, o Fillipe sempre se destacou pela disciplina
+                                e pela vontade de resolver qualquer problema que aparecesse
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="testimonials__card">
+                        <div class="blob"></div>
+
+                        <div class="testimonials__data">
+                            <img src="assets/img/assai-atacadista-logo.png" alt="image" class="testimonials__img">
+                            <h2 class="testimonials__name">Assai</h2>
+
+                            <div class="testimonials__rating">
+                                <div class="testimonials__stars">
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+
+                                <h3 class="testimonials__number">5.0</h3>
+                            </div>
+
+                            <p>
+                                Durante o tempo que trabalhou conosco, o Fillipe sempre se destacou pela disciplina
+                                e pela vontade de resolver qualquer problema que aparecesse
+                            </p>
+
+                        </div>
+                    </article>
+                </div>
+                <!-- TESTIMONIALS CARDS 2 -->
+                <div class="testimonials__content testimonials__reverse">
+                    <article class="testimonials__card">
+                        <div class="blob"></div>
+
+                        <div class="testimonials__data">
+                            <img src="assets/img/bom-lugar-logo.png" alt="image"
+                                class="testimonials__img testimonials__img--spar">
+                            <h2 class="testimonials__name">Bom lugar</h2>
+
+                            <div class="testimonials__rating">
+                                <div class="testimonials__stars">
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+
+                                <h3 class="testimonials__number">5.0</h3>
+                            </div>
+
+                            <p>
+                                Durante o tempo que trabalhou conosco, o Fillipe sempre se destacou pela disciplina
+                                e pela vontade de resolver qualquer problema que aparecesse.
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="testimonials__card">
+                        <div class="blob"></div>
+
+                        <div class="testimonials__data">
+                            <img src="assets/img/sesc-logo.png" alt="image" class="testimonials__img">
+                            <h2 class="testimonials__name">Sesc</h2>
+
+                            <div class="testimonials__rating">
+                                <div class="testimonials__stars">
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+
+                                <h3 class="testimonials__number">5.0</h3>
+                            </div>
+
+                            <p>
+                                Durante o tempo que trabalhou conosco, o Fillipe sempre se destacou pela disciplina
+                                e pela vontade de resolver qualquer problema que aparecesse
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="testimonials__card">
+                        <div class="blob"></div>
+
+                        <div class="testimonials__data">
+                            <img src="assets/img/sesc-logo.png" alt="image" class="testimonials__img">
+                            <h2 class="testimonials__name">Sesc</h2>
+
+                            <div class="testimonials__rating">
+                                <div class="testimonials__stars">
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+
+                                <h3 class="testimonials__number">5.0</h3>
+                            </div>
+
+                            <p>
+                                Durante o tempo que trabalhou conosco, o Fillipe sempre se destacou pela disciplina
+                                e pela vontade de resolver qualquer problema que aparecesse
+                            </p>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__data">
+                    <h2 class="section__title"></h2>
+
+                    <p class="contact__description">Me conte sobre o seu próximo projeto</p>
+
+                    <button class="contact__button button" id="contact-btn">
+                        Copiar email <i class="ri-file-copy-line"></i>
+                        <!--ENTER YOUR EMAIL -->
+                        <span class="contact__email" id="contact-email">fillipedev@gmail.com</span>
+                    </button>
+                </div>
+
+                <div class="contact__content grid">
+                    <div class="contact__info grid">
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <address class="contact__address">fillipedev@gmail.com</address>
+                        </div>
+
+                        <div>
+                            <h3 class="contact__title">Localização</h3>
+                            <address class="contact__address">Sorocaba,SP</address>
+                        </div>
+                    </div>
+
+                    <div class="contact__social">
+                        <h3 class="contact__title">Redes sociais</h3>
+
+                        <div class="contact__links">
+                            <a href="" target="_blank" class="contact__link">
+                                Linkedin
+                                <i class="ri-arrow-right-up-long-line"></i>
+                            </a>
+
+                            <a href="" target="_blank" class="contact__link">
+                                Github
+                                <i class="ri-arrow-right-up-long-line"></i>
+                            </a>
+
+                            <a href="" target="_blank" class="contact__link">
+                                Instagram
+                                <i class="ri-arrow-right-up-long-line"></i>
+                            </a>
+
+                            <a href="" target="_blank" class="contact__link">
+                                Facebook
+                                <i class="ri-arrow-right-up-long-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact__write">
+                        <h3 class="contact__title">Contato</h3>
+
+                        <div class="contact__links">
+                            <a href="" target="_blank" class="contact__link">
+                                WhatsApp
+                                <i class="ri-arrow-right-up-long-line"></i>
+                            </a>
+
+                            <a href="" target="_blank" class="contact__link">
+                                Messenger
+                                <i class="ri-arrow-right-up-long-line"></i>
+                            </a>
+
+                            <a href="" target="_blank" class="contact__link">
+                                Telegram
+                                <i class="ri-arrow-right-up-long-line"></i>
+                            </a>
+
+                            <a href="" target="_blank" class="contact__link">
+                                Twitter
+                                <i class="ri-arrow-right-up-long-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer grid">
+        <div class="blob-animate"></div>
+
+        <div class="footer__copy">
+            Todos os direitos reservados por <span>fillipedev</span>
+        </div>
+
+        <div class="footer__year">
+            &#169; <span id="footer-year"></span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="/assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== ANIME JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+</body>
 </html>
-<!--parei na parte do video 19:10 minutos-->
