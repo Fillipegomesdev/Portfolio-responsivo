@@ -1400,3 +1400,59 @@ img {
     display: none;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+    /* 1. Garante que a seção Home ocupe a altura da tela do celular */
+    .home__container {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centraliza o conteúdo principal verticalmente */
+        align-items: center;
+        padding: 0 1.5rem;
+    }
+
+    /* 2. Ícones Sociais Fixos na Esquerda (como no Desktop) */
+    .home__social {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        display: grid;
+        row-gap: 1rem; /* Espaço vertical entre ícones */
+        z-index: 10;
+    }
+
+    /* 3. Texto do Currículo na Vertical (Lado Direito) */
+    .home__cv {
+        position: absolute;
+        right: -1rem; /* Ajuste conforme necessário */
+        bottom: 5rem;
+        transform: rotate(-90deg);
+        transform-origin: center;
+        white-space: nowrap;
+    }
+
+    /* 4. Ajuste da Foto e Nome para não sumirem */
+    .home__perfil {
+        width: 200px; /* Tamanho proporcional ao celular */
+        margin-bottom: 1.5rem;
+    }
+
+    .home__data {
+        text-align: center;
+    }
+
+    .home__title {
+        font-size: 2.2rem; /* Diminui um pouco para não quebrar linha estranho */
+        line-height: 1.2;
+    }
+
+    /* 5. Ajuste dos Textos de Tecnologia (embaixo da foto) */
+    .home__info {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
