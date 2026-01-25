@@ -498,7 +498,6 @@ img {
 .projects__number{
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .projects__number h1{
@@ -1012,11 +1011,106 @@ img {
 
 
 /*=============== BREAKPOINTS ===============*/
-@media screen and (max-width: 320px) {
-  .container{
+
+/* REATORAÇÃO MOBILE (320px - 768px) */
+@media screen and (max-width: 768px) {
+  .container {
     margin-inline: 1rem;
   }
-  
+
+  .home__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    padding-top: 6rem;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  .home__data {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    z-index: 2;
+  }
+
+  .home__greeting {
+    font-size: var(--normal-font-size);
+  }
+
+  .home__name {
+    font-size: var(--bigger-font-size);
+    line-height: 1.2;
+  }
+
+  .home__image {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .home__perfil {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: contain;
+    z-index: 1;
+  }
+
+  .home__image .blob-animate {
+    width: 180px;
+    height: 180px;
+    bottom: 10%;
+  }
+
+  .home__info {
+    position: relative;
+    bottom: 0;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+    z-index: 2;
+    margin-top: -1rem;
+  }
+
+  .home__profession-1, 
+  .home__profession-2 {
+    font-size: var(--h2-font-size);
+  }
+
+  .home__profession-2 {
+    transform: none;
+  }
+
+  .home__social,
+  .home__cv {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: var(--z-fixed);
+  }
+
+  .home__social {
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .home__cv {
+    right: -2rem;
+    rotate: -90deg;
+    white-space: nowrap;
+  }
+
+  /* Outros ajustes mobile */
   .blob,
   .home__image .blob-animate {
     width: 220px;
@@ -1034,6 +1128,25 @@ img {
   .testimonials__card{
     width: 250px;
     padding-bottom: 2rem;
+  }
+
+  /* Micro-telas */
+  @media screen and (max-width: 350px) {
+    .home__container {
+      row-gap: 1.5rem;
+    }
+    .home__name {
+      font-size: var(--h1-font-size);
+    }
+    .home__perfil {
+      max-width: 220px;
+    }
+    .home__social {
+      left: .5rem;
+    }
+    .home__cv {
+      right: -2.5rem;
+    }
   }
 }
 
@@ -1191,8 +1304,6 @@ img {
     rotate: 0deg;
     right: 0;
   }
-
-
 
   .about__container{
     grid-template-columns: repeat(2, 500px);
@@ -1399,60 +1510,4 @@ img {
   .cursor{
     display: none;
   }
-}
-
-
-@media screen and (max-width: 768px) {
-    /* 1. Garante que a seção Home ocupe a altura da tela do celular */
-    .home__container {
-        position: relative;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Centraliza o conteúdo principal verticalmente */
-        align-items: center;
-        padding: 0 1.5rem;
-    }
-
-    /* 2. Ícones Sociais Fixos na Esquerda (como no Desktop) */
-    .home__social {
-        position: absolute;
-        left: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-        display: grid;
-        row-gap: 1rem; /* Espaço vertical entre ícones */
-        z-index: 10;
-    }
-
-    /* 3. Texto do Currículo na Vertical (Lado Direito) */
-    .home__cv {
-        position: absolute;
-        right: -1rem; /* Ajuste conforme necessário */
-        bottom: 5rem;
-        transform: rotate(-90deg);
-        transform-origin: center;
-        white-space: nowrap;
-    }
-
-    /* 4. Ajuste da Foto e Nome para não sumirem */
-    .home__perfil {
-        width: 200px; /* Tamanho proporcional ao celular */
-        margin-bottom: 1.5rem;
-    }
-
-    .home__data {
-        text-align: center;
-    }
-
-    .home__title {
-        font-size: 2.2rem; /* Diminui um pouco para não quebrar linha estranho */
-        line-height: 1.2;
-    }
-
-    /* 5. Ajuste dos Textos de Tecnologia (embaixo da foto) */
-    .home__info {
-        margin-top: 2rem;
-        text-align: center;
-    }
 }
