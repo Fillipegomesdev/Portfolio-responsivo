@@ -498,6 +498,7 @@ img {
 .projects__number{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .projects__number h1{
@@ -1011,106 +1012,11 @@ img {
 
 
 /*=============== BREAKPOINTS ===============*/
-
-/* REATORAÇÃO MOBILE (320px - 768px) */
-@media screen and (max-width: 768px) {
-  .container {
+@media screen and (max-width: 320px) {
+  .container{
     margin-inline: 1rem;
   }
-
-  .home__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 2rem;
-    padding-top: 6rem;
-    text-align: center;
-    min-height: 100vh;
-  }
-
-  .home__data {
-    display: flex;
-    flex-direction: column;
-    row-gap: .5rem;
-    z-index: 2;
-  }
-
-  .home__greeting {
-    font-size: var(--normal-font-size);
-  }
-
-  .home__name {
-    font-size: var(--bigger-font-size);
-    line-height: 1.2;
-  }
-
-  .home__image {
-    position: relative;
-    width: 100%;
-    max-width: 280px;
-    margin-inline: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .home__perfil {
-    width: 100%;
-    height: auto;
-    max-height: 40vh;
-    object-fit: contain;
-    z-index: 1;
-  }
-
-  .home__image .blob-animate {
-    width: 180px;
-    height: 180px;
-    bottom: 10%;
-  }
-
-  .home__info {
-    position: relative;
-    bottom: 0;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: .25rem;
-    z-index: 2;
-    margin-top: -1rem;
-  }
-
-  .home__profession-1, 
-  .home__profession-2 {
-    font-size: var(--h2-font-size);
-  }
-
-  .home__profession-2 {
-    transform: none;
-  }
-
-  .home__social,
-  .home__cv {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: var(--z-fixed);
-  }
-
-  .home__social {
-    left: 1rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-  }
-
-  .home__cv {
-    right: -2rem;
-    rotate: -90deg;
-    white-space: nowrap;
-  }
-
-  /* Outros ajustes mobile */
+  
   .blob,
   .home__image .blob-animate {
     width: 220px;
@@ -1128,25 +1034,6 @@ img {
   .testimonials__card{
     width: 250px;
     padding-bottom: 2rem;
-  }
-
-  /* Micro-telas */
-  @media screen and (max-width: 350px) {
-    .home__container {
-      row-gap: 1.5rem;
-    }
-    .home__name {
-      font-size: var(--h1-font-size);
-    }
-    .home__perfil {
-      max-width: 220px;
-    }
-    .home__social {
-      left: .5rem;
-    }
-    .home__cv {
-      right: -2.5rem;
-    }
   }
 }
 
@@ -1304,6 +1191,8 @@ img {
     rotate: 0deg;
     right: 0;
   }
+
+
 
   .about__container{
     grid-template-columns: repeat(2, 500px);
@@ -1511,3 +1400,7 @@ img {
     display: none;
   }
 }
+
+
+
+
