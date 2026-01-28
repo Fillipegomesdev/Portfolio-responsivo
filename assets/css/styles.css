@@ -277,6 +277,8 @@ img {
   position: relative;
   display: grid;
   overflow-y: clip;
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
 .home__image .blob-animate {
@@ -438,6 +440,8 @@ img {
 .about__image{
   position: relative;
   justify-self: center;
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
 .about__image .blob-animate:nth-child(1){
@@ -1400,7 +1404,3 @@ img {
     display: none;
   }
 }
-
-
-
-
