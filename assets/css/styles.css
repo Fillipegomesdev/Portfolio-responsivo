@@ -263,7 +263,7 @@ img {
 
 .home__container {
   position: relative;
-  padding-top: 4rem;
+  padding-top: 2rem;
   row-gap: 3rem;
 }
 
@@ -1058,6 +1058,38 @@ img {
     padding-bottom: 2rem;
   }
 }
+@media screen and (max-width: 450px) {
+  /* 1. Diminui a foto para ela não dominar a tela toda */
+  .home__perfil {
+    width: 220px !important; /* Estava 320px, vamos reduzir para dar respiro */
+    justify-self: center;
+  }
+
+  /* 2. Suaviza a subida da imagem */
+  .home__image {
+    margin-top: -1.5rem !important; /* No desktop era -15rem, aqui é quase nada */
+  }
+
+  /* 3. Tira o texto do seu rosto e coloca abaixo da foto */
+  .home__info {
+    position: relative !important; /* Muda de absolute para relative */
+    bottom: 0 !important;         /* Reseta a posição do monitor */
+    margin-top: 1.5rem;            /* Cria um espaço entre seu queixo e o texto */
+    justify-self: center;
+    text-align: center;
+  }
+
+  /* 4. Ajusta o nome para não ficar gigante */
+  .home__name {
+    font-size: 1.8rem !important;
+  }
+
+  /* 5. Dá um tapinha nos ícones sociais */
+  .home__social {
+    left: 0.5rem !important;
+    row-gap: 0.5rem;
+  }
+}
 
 @media screen and (min-width: 540px) {
   .home__container {
@@ -1124,8 +1156,9 @@ img {
 }
 
 /*For Large Devices */
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1024px) {
   .container{
+    max-width: 1024px;
     margin-inline: auto;
   }
   
@@ -1156,7 +1189,8 @@ img {
   }
   .home__container {
     width: initial;
-    padding-top: 3rem;
+    padding-top: 2rem;
+    row-gap: 0;
   }
   .home__perfil {
     width: 470px;
